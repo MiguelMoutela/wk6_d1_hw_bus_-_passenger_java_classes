@@ -14,15 +14,19 @@ public class BusTest {
   }
 
   @Test
-  public void hasDestinantion(){
+  public void hasDestinantion() {
     assertEquals("Ocean Terminal", bus.getDestination());
   }
   @Test
-  public void hasNumber(){
+  public void hasNumber() {
     assertEquals(25, bus.getNumber());
   }
   @Test
-  public void count(){
-    assertEquals(0, bus.count());
+  public void passengerCount() {
+    assertEquals(0, bus.passengerCount());
+  }
+  @Test
+  public void passengerCanBoard() {
+    assertEquals(1, bus.passengerCount());
   }
 }

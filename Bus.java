@@ -6,7 +6,7 @@ class Bus{
   public Bus(String destination, int number){
     this.destination = destination;
     this.number = number;
-    this.passenger = new Passenger[0];
+    this.passenger = new Passenger[40];
   }
   public String getDestination(){
     return this.destination;
@@ -14,7 +14,7 @@ class Bus{
   public int getNumber(){
     return this.number;
   }
-  public int count(){
+  public int passengerCount(){
     int count = 0;
     for(Passenger passenger : passenger){
       if(passenger != null){
@@ -23,5 +23,14 @@ class Bus{
     }
     return count;
   }
-
+  public boolean isBusFull(){
+    return passengerCount() == passenger.length;
+  }
+  public void addPassenger(Passenger passenger){
+    if(isBusFull()){
+      return;
+    }
+    int a = passengerCount();
+    passenger[a] = passenger;
+  }
 }
