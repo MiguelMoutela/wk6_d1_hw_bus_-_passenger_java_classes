@@ -9,6 +9,7 @@ public class BusTest {
   @Before
 
   public void before() {
-    this.bus = 
+    this.bus = new Bus("Ocean Terminal", 25);
+    this.passenger = new Passenger();
   }
 }

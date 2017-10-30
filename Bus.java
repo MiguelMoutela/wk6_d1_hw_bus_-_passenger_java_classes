@@ -1,4 +1,4 @@
-class Bear{
+class Bus{
   private String destination;
   private int number;
   private Passenger[] capacity;
@@ -6,6 +6,6 @@ class Bear{
   public Bus(String destination, int number){
     this.destination = destination;
     this.number = number;
-    this.capacity = new Passanger[40];
+    this.capacity = new Passenger[0];
   }
 }
