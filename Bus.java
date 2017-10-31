@@ -23,6 +23,7 @@ class Bus{
     }
     return count;
   }
+
   public boolean isBusFull(){
     return passengerCount() == passenger.length;
   }
@@ -30,7 +31,9 @@ class Bus{
     if(isBusFull()){
       return;
     }
-    int a = passengerCount();
-    passenger[a] = passenger;
+    int passengerCount = passengerCount();
+    //Passenger passenger
+    //Passenger[] passenger
+    this.passenger[passengerCount] = passenger;
   }
 }

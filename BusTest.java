@@ -27,6 +27,7 @@ public class BusTest {
   }
   @Test
   public void passengerCanBoard() {
+    bus.addPassenger(passenger);
     assertEquals(1, bus.passengerCount());
   }
 }
